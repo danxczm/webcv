@@ -1,8 +1,12 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { motion } from 'framer-motion';
+import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
+import { HiDownload } from 'react-icons/hi';
+import { FaGithubSquare } from 'react-icons/fa';
 
 export default function Intro() {
   return (
@@ -44,6 +48,45 @@ export default function Intro() {
         <span className="font-bold">front-end developer</span> based in{' '}
         <span className="italic font-bold">Ukraine, Kyiv. 🇺🇦</span>
       </motion.p>
+
+      <motion.div
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: 'spring', duration: 2, delay: 0.2 }}
+      >
+        <Link
+          href="#contact"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+        >
+          Contact me here{' '}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+        </Link>
+
+        <a
+          className="group cursor-pointer bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10"
+          href="/CV.pdf"
+          download
+        >
+          Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+        </a>
+
+        <a
+          className="cursor-pointer bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
+          href="https://www.linkedin.com/in/bohdan-borodavko-615796173/"
+          target="_blank"
+        >
+          <BsLinkedin />
+        </a>
+
+        <a
+          className="cursor-pointer first-letter:bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
+          href="https://github.com/danxczm"
+          target="_blank"
+        >
+          <FaGithubSquare />
+        </a>
+      </motion.div>
     </section>
   );
 }
