@@ -44,7 +44,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: 'spring', duration: 2 }}
       >
-        <span className="font-bold">Hello, I`m Dan.</span> A passionate{' '}
+        <span className="font-bold">Hello, I'm Dan.</span> A passionate{' '}
         <span className="font-bold">front-end developer</span> based in{' '}
         <span className="italic font-bold">Ukraine, Kyiv. 🇺🇦</span>
       </motion.p>
