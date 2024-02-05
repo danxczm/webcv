@@ -1,34 +1,38 @@
 'use client';
-
 import { motion } from 'framer-motion';
 
 import SectionHeading from './section-heading';
 
+import useSectionInView from '@/lib/hooks';
+
 export default function About() {
+  const { ref } = useSectionInView('About');
+
   return (
     <motion.section
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      id="about"
+      ref={ref}
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.3, duration: 0.5 }}
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in <span className="font-medium">Law</span>, I decided to
-        pursue my passion for programming. I enrolled in an online school "GO IT" and learned{' '}
-        <span className="font-medium">front-end web development</span>.{' '}
-        <span className="italic">My favorite part of programming</span> is the problem-solving
-        aspect. I <span className="underline">love</span> the feeling of finally figuring out a
-        solution to a problem. My core stack is{' '}
-        <span className="font-medium">React and Next.js</span>. I am also familiar with{' '}
-        <span className="font-medium">TypeScript</span>. I am always looking to learn new
-        technologies. I am currently looking for a{' '}
-        <span className="font-medium">full-time position</span> as a software developer.
+        Law grad turned coding maestro, I dove into the world of programming via an online school
+        "GOIT," mastering <span className="font-medium">front-end web development</span>.{' '}
       </p>
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy making music, watching movies,
-        and playing with my dog.
+        <span className="italic">Solving coding puzzles</span> gives me an unbeatable high. Armed
+        with <span className="font-medium">React, Next.js</span>, and a touch of{' '}
+        <span className="font-medium">TypeScript</span>, I'm on the lookout for a full-time software
+        developer role. I am always looking to learn new technologies.
       </p>
+      <p>
+        Outside the coding <span className="italic text-[#03A062]">matrix</span>, catch me making
+        music, watching movies, or playing with my dog.
+      </p>
+      <p>Ready to bring my problem-solving prowess to your team!🚀</p>
     </motion.section>
   );
 }

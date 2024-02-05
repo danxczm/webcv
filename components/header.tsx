@@ -4,10 +4,14 @@ import React from 'react';
 import Link from 'next/link';
 
 import { motion } from 'framer-motion';
+import clsx from 'clsx';
 
 import { links } from '@/lib/data';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Header() {
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
     <header className="relative z-50">
       <motion.div
@@ -20,11 +24,30 @@ export default function Header() {
           {links.map(link => (
             <motion.li
               key={link.hash}
-              className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950"
+              className="relative h-3/4 flex w-full items-center justify-center"
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
-              <Link href={link.hash}>{link.name}</Link>
+              <Link
+                href={link.hash}
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
+                className={clsx(
+                  'flex w-full items-center justify-center p-3 hover:text-gray-950 transition',
+                  { 'text-gray-950': activeSection === link.name }
+                )}
+              >
+                {link.name}
+              </Link>
+              {link.name === activeSection && (
+                <motion.span
+                  layoutId="activeSection"
+                  transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                  className="bg-gray-100 rounded-full absolute inset-0 -z-10"
+                ></motion.span>
+              )}
             </motion.li>
           ))}
         </ul>

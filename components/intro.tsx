@@ -4,13 +4,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { motion } from 'framer-motion';
+
+import useSectionInView from '@/lib/hooks';
+
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 
 export default function Intro() {
+  const { ref } = useSectionInView('Home', 0.5);
+
   return (
-    <section className="mb-2 max-w-[50rem] text-center sm:mb-0">
+    <section
+      id="home"
+      ref={ref}
+      className="mb-2 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -44,9 +53,13 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: 'spring', duration: 2 }}
       >
-        <span className="font-bold">Hello, I'm Dan.</span> A passionate{' '}
-        <span className="font-bold">front-end developer</span> based in{' '}
+        <span className="italic block">Hello, I'm Dan!</span>
+        <span className="font-bold">Front-end developer</span> from{' '}
         <span className="italic font-bold">Ukraine, Kyiv. 🇺🇦</span>
+        <span className="italic block">I enjoy building apps and sites.</span>
+        <span>
+          My focus is <span className="underline italic font-bold">React/Next.js</span> 👨‍🚀
+        </span>
       </motion.h1>
 
       <motion.div
