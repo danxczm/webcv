@@ -10,3 +10,7 @@
     animation-delay: 4s;
   }
 }
+
+html {
+  --line-color: #e5e7eb;
+}

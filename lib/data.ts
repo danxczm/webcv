@@ -1,8 +1,7 @@
 import React from 'react';
 
-import { CgWorkAlt } from 'react-icons/cg';
+import { MdWorkOutline } from 'react-icons/md';
 import { FaReact } from 'react-icons/fa';
-import { LuGraduationCap } from 'react-icons/lu';
 
 import skyLang from '@/public/skyLang.png';
 import invoicer from '@/public/invoicer.png';
@@ -37,28 +36,27 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
+    title: 'Junior Front-End Developer in TRUSTEE GLOBAL',
+    location: 'Vinnytsia, Ukraine 🇺🇦',
     description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
-    icon: React.createElement(LuGraduationCap),
-    date: '2019',
-  },
-  {
-    title: 'Front-End Developer',
-    location: 'Orlando, FL',
-    description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
-    icon: React.createElement(CgWorkAlt),
-    date: '2019 - 2021',
-  },
-  {
-    title: 'Full-Stack Developer',
-    location: 'Houston, TX',
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      'Creating a sleek and dynamic web version for main product! Collaborating on both enhancing the current project and crafting exciting new components. Also turbocharging the existing project with optimization and refactoring magic. Tools of the trade: JS, React, React Native, Apollo GraphQl, GitLab.',
     icon: React.createElement(FaReact),
-    date: '2021 - present',
+    date: '2023',
+  },
+  {
+    title: 'Sales manager in BRIGHTERLY',
+    location: 'Las Vegas, USA 🇺🇸',
+    description: 'Ensure effective communication between team members and clients.',
+    icon: React.createElement(MdWorkOutline),
+    date: '2022 - 2023',
+  },
+  {
+    title: 'Sales manager in ENGLISHDOM',
+    location: 'Dnipro, Ukraine 🇺🇦',
+    description:
+      'I`ve excel in fostering client relationships, identifying opportunities, and ensuring effective communication to drive business growth',
+    icon: React.createElement(MdWorkOutline),
+    date: '2020-2022',
   },
 ] as const;
 
