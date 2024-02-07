@@ -24,7 +24,7 @@ export default function Header() {
           {links.map(link => (
             <motion.li
               key={link.hash}
-              className="relative h-3/4 flex w-full items-center justify-center"
+              className="relative h-3/4 flex items-center justify-center"
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
@@ -35,8 +35,8 @@ export default function Header() {
                   setTimeOfLastClick(Date.now());
                 }}
                 className={clsx(
-                  'flex w-full items-center justify-center p-3 hover:text-gray-950 transition',
-                  { 'text-gray-950': activeSection === link.name }
+                  'flex w-full items-center justify-center p-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300',
+                  { 'text-gray-950 dark:text-gray-200': activeSection === link.name }
                 )}
               >
                 {link.name}
@@ -45,7 +45,7 @@ export default function Header() {
                 <motion.span
                   layoutId="activeSection"
                   transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                  className="bg-gray-100 rounded-full absolute inset-0 -z-10"
+                  className="bg-gray-100 rounded-full absolute inset-0 -z-10  dark:bg-gray-800 "
                 ></motion.span>
               )}
             </motion.li>
