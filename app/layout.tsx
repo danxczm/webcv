@@ -25,11 +25,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-32 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
-        <div className="relative w-full max-w-xl -z-10 ml-auto mr-auto">
-          <div className="absolute top-12 -left-10 sm:w-[400px] sm:h-[400px] bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000"></div>
-          <div className="absolute top-12 -right-16  sm:w-[400px] sm:h-[400px] bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-2000"></div>
+        <div className="relative w-full max-w-lg -z-10 ml-auto mr-auto">
+          <div className="absolute sm:right-44 right-10 w-52 h-52 sm:w-96 sm:h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-50  animate-blob animation-delay-2000"></div>
+          <div className="absolute sm:left-44 left-10 w-52 h-52 sm:w-96 sm:h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000"></div>
         </div>
-
         <ThemeContextProvider>
           <Toaster position="top-right" />
 
