@@ -9,7 +9,14 @@ import { projectsData } from '@/lib/data';
 
 type ProjectProps = (typeof projectsData)[number];
 
-export default function Project({ title, description, tags, imageUrl }: ProjectProps) {
+export default function Project({
+  title,
+  description,
+  tags,
+  imageUrl,
+  github,
+  link,
+}: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -39,6 +46,22 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
               </li>
             ))}
           </ul>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <a
+              className="bg-gray-400 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:bg-gray-500 dark:text-white/70"
+              href={github}
+              target="_blank"
+            >
+              github
+            </a>
+            <a
+              className="bg-gray-400 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:bg-gray-500 dark:text-white/70"
+              href={link}
+              target="_blank"
+            >
+              link
+            </a>
+          </div>
         </div>
         <Image
           src={imageUrl}

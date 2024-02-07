@@ -64,22 +64,27 @@ export const projectsData = [
   {
     title: 'SkyLang',
     description:
-      'My language learning pet project is an innovative platform designed to make vocabulary acquisition engaging and efficient.',
-    tags: ['React', 'Tailwind', 'RTK Query (Redux)', 'Cloud Firestore'],
+      'Is an innovative platform designed to make vocabulary acquisition engaging and efficient.',
+    tags: ['React', 'Tailwind', 'RTK Query', 'Cloud Firestore'],
     imageUrl: skyLang,
+    github: 'https://github.com/danxczm/translationAppVikki',
+    link: 'https://danxczm.github.io/translationAppVikki/',
   },
   {
     title: 'The Crypto Invoicer',
-    description:
-      'My pet project, the Crypto Invoicer App, was conceived to redefine the invoicing experience in the realm of cryptocurrency transactions.',
+    description: 'Designed to redefine the billing experience for cryptocurrency transactions.',
     tags: ['React', 'Tailwind', 'Redux'],
     imageUrl: invoicer,
+    github: 'https://github.com/danxczm/trustvoice',
+    link: 'https://danxczm.github.io/trustvoice/',
   },
   {
     title: 'Just a simple Todo App',
     description: 'This is the beginning of my TS journey which I recently started.',
     tags: ['React', 'TypeScript', 'Tailwind'],
     imageUrl: todo,
+    github: 'https://github.com/danxczm/learningTS',
+    link: 'https://danxczm.github.io/learningTS/',
   },
 ] as const;
 
