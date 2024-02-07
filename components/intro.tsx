@@ -93,21 +93,23 @@ export default function Intro() {
           Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack10 dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/bohdan-borodavko-615796173/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          <a
+            className="bg-white p-4 text-gray-700 hover:text-gray-950  rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack10 dark:bg-white/10 dark:text-white/60"
+            href="https://www.linkedin.com/in/bohdan-borodavko-615796173/"
+            target="_blank"
+          >
+            <BsLinkedin className="p-0" />
+          </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack10 dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/danxczm"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+          <a
+            className="bg-white p-4 text-gray-700  text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack10 dark:bg-white/10 dark:text-white/60"
+            href="https://github.com/danxczm"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
