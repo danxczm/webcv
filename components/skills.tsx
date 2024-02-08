@@ -33,7 +33,7 @@ export default function Skills() {
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className="grid sm:grid-cols-4 gap-2 sm:gap-4">
+      <ul className="grid grid-cols-4 gap-2 sm:gap-6">
         {skillsData.map((item, index) => (
           <motion.li
             variants={fadeInAnimationVariants}
@@ -44,13 +44,13 @@ export default function Skills() {
             }}
             custom={index}
             key={index}
-            className="bg-white cursor-pointer borderBlack10 rounded-xl sm:rounded-[35px] p-4 dark:bg-white/10"
+            className="bg-white cursor-pointer borderBlack10 rounded-3xl sm:rounded-[35px] p-2 sm:p-3 dark:bg-white/10"
           >
             <Image
-              className="hover:-translate-y-4 hover:scale-110 transition sm:w-24 sm:h-24"
+              className="hover:scale-125 transition duration-500 sm:w-24 sm:h-24"
               src={item}
-              width={50}
-              height={50}
+              width={100}
+              height={100}
               alt="skill-icon"
               loading="lazy"
             ></Image>
