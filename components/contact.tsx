@@ -20,7 +20,7 @@ export default function Contact() {
     <motion.section
       ref={ref}
       id="contact"
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="mb-20 w-[min(100%,38rem)] text-center sm:mb-28"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{
@@ -31,7 +31,7 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
+      <p className="-mt-6 text-gray-700 dark:text-white/80">
         Please contact me directly at{' '}
         <a className="underline" href="mailto:danbohdan92@gmail.com">
           danbohdan92@gmail.com
@@ -52,7 +52,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack10 !outline-none focus:border-black focus:ring focus:ring-gray-400 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="borderBlack10 h-14 rounded-lg px-4 !outline-none transition-all focus:border-black focus:ring focus:ring-gray-400 dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
           name="email"
           type="email"
           placeholder="Your email"
@@ -60,7 +60,7 @@ export default function Contact() {
           maxLength={500}
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack10 !outline-none focus:border-black focus:ring focus:ring-gray-400 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="borderBlack10 my-3 h-52 rounded-lg p-4 !outline-none transition-all focus:border-black focus:ring focus:ring-gray-400 dark:bg-white dark:bg-opacity-80 dark:outline-none dark:focus:bg-opacity-100"
           name="message"
           placeholder="Your message"
           required

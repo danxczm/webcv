@@ -44,10 +44,10 @@ export default function Skills() {
             }}
             custom={index}
             key={index}
-            className="bg-white cursor-pointer borderBlack10 rounded-3xl sm:rounded-[35px] p-2 sm:p-3 dark:bg-white/10"
+            className="borderBlack10 cursor-pointer rounded-3xl bg-white p-2 dark:bg-white/10 sm:rounded-[35px] sm:p-3"
           >
             <Image
-              className="hover:scale-125 transition duration-500 sm:w-24 sm:h-24"
+              className="transition duration-500 hover:scale-125 sm:h-24 sm:w-24"
               src={item}
               width={100}
               height={100}

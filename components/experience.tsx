@@ -16,7 +16,7 @@ export default function Experience() {
   const { theme } = useTheme();
 
   return (
-    <section ref={ref} id="experience" className="scroll-mt-28 mb-28">
+    <section ref={ref} id="experience" className="mb-28 scroll-mt-28">
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map(({ title, location, description, icon, date }, index) => (
@@ -44,7 +44,7 @@ export default function Experience() {
               }}
             >
               <h3 className="font-semibold capitalize">{title}</h3>
-              <p className="font-normal !mt-0">{location}</p>
+              <p className="!mt-0 font-normal">{location}</p>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">{description}</p>
             </VerticalTimelineElement>
           </React.Fragment>

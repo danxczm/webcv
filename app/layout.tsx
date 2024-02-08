@@ -23,11 +23,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-32 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+        className={`${inter.className} relative bg-gray-50 pt-32 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90 sm:pt-36`}
       >
-        <div className="relative w-full max-w-lg -z-10 ml-auto mr-auto">
-          <div className="absolute sm:right-44 right-10 w-52 h-52 sm:w-96 sm:h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-50  animate-blob animation-delay-2000"></div>
-          <div className="absolute sm:left-44 left-10 w-52 h-52 sm:w-96 sm:h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob animation-delay-4000"></div>
+        <div className="relative -z-10 ml-auto mr-auto w-full max-w-lg">
+          <div className="animation-delay-2000 absolute right-10 h-52 w-52 animate-blob rounded-full bg-blue-300 opacity-50 mix-blend-multiply blur-xl filter sm:right-44  sm:h-96 sm:w-96"></div>
+          <div className="animation-delay-4000 absolute left-10 h-52 w-52 animate-blob rounded-full bg-yellow-300 opacity-50 mix-blend-multiply blur-xl filter sm:left-44 sm:h-96 sm:w-96"></div>
         </div>
         <ThemeContextProvider>
           <Toaster position="top-right" />
