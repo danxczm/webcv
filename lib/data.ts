@@ -89,15 +89,12 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Next.js',
-  'Git',
-  'Tailwind',
-  'Redux',
-  'Figma',
-  'Ableton Live',
+  'https://skillicons.dev/icons?i=html',
+  'https://skillicons.dev/icons?i=css',
+  'https://skillicons.dev/icons?i=js',
+  'https://skillicons.dev/icons?i=ts',
+  'https://skillicons.dev/icons?i=react',
+  'https://skillicons.dev/icons?i=next',
+  'https://skillicons.dev/icons?i=tailwind',
+  'https://skillicons.dev/icons?i=redux',
 ] as const;
