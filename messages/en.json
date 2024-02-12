@@ -18,7 +18,18 @@
     "cv": "Download CV "
   },
   "About": {
-    "text-section-type": "text"
+    "about": "About me",
+    "info": "Law grad turned coding maestro, I dove into the world of programming via an online school 'GOIT' mastering ",
+    "info2": "front-end web development.",
+    "info3": "Solving coding puzzles ",
+    "info4": "gives me an unbeatable high. Armed with ",
+    "info5": "React, Next.js",
+    "info6": ", and a touch of ",
+    "info7": ", I'm on the lookout for a full-time software developer role. I am always looking to learn new technologies.",
+    "info8": "Outside the coding ",
+    "info9": "matrix",
+    "info10": ", catch me making music, watching movies, or playing with my dog.",
+    "info11": "Ready to bring my problem-solving prowess to your team!🚀"
   },
   "Contact": {
     "text-section-type": "text"
