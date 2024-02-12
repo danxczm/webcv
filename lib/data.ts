@@ -62,6 +62,7 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    id: 1,
     title: 'SkyLang',
     description:
       'Is an innovative platform designed to make vocabulary acquisition engaging and efficient.',
@@ -71,6 +72,7 @@ export const projectsData = [
     link: 'https://danxczm.github.io/translationAppVikki/',
   },
   {
+    id: 2,
     title: 'The Crypto Invoicer',
     description: 'Designed to redefine the billing experience for cryptocurrency transactions.',
     tags: ['React', 'Tailwind', 'Redux'],
@@ -79,6 +81,7 @@ export const projectsData = [
     link: 'https://danxczm.github.io/trustvoice/',
   },
   {
+    id: 3,
     title: 'Just a simple Todo App',
     description: 'This is the beginning of my TS journey which I recently started.',
     tags: ['React', 'TypeScript', 'Tailwind'],

@@ -31,10 +31,13 @@
     "info10": ", catch me making music, watching movies, or playing with my dog.",
     "info11": "Ready to bring my problem-solving prowess to your team!🚀"
   },
-  "Contact": {
-    "text-section-type": "text"
+  "Projects": {
+    "projects": "My Projects",
+    "description1": "Is an innovative platform designed to make vocabulary acquisition engaging and efficient.",
+    "description2": "Designed to redefine the billing experience for cryptocurrency transactions.",
+    "description3": "This is the beginning of my TS journey which I recently started."
   },
   "Experience": {
-    "text-section-type": "text"
+    "experience": "My Experience"
   }
 }
