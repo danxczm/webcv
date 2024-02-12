@@ -1,13 +1,14 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 import { motion } from 'framer-motion';
 
 import SectionHeading from './section-heading';
 import { skillsData } from '@/lib/data';
 import useSectionInView from '@/lib/hooks';
-import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const fadeInAnimationVariants = {
   initial: {
@@ -26,13 +27,15 @@ const fadeInAnimationVariants = {
 export default function Skills() {
   const { ref } = useSectionInView('skills');
 
+  const t = useTranslations('Skills');
+
   return (
     <section
       id="skills"
       ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
-      <SectionHeading>My skills</SectionHeading>
+      <SectionHeading>{t('skills')}</SectionHeading>
       <ul className="grid grid-cols-4 gap-2 sm:gap-6">
         {skillsData.map((item, index) => (
           <motion.li

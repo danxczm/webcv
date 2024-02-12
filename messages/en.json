@@ -37,7 +37,10 @@
     "description2": "Designed to redefine the billing experience for cryptocurrency transactions.",
     "description3": "This is the beginning of my TS journey which I recently started."
   },
+  "Skills": {
+    "skills": "my skills"
+  },
   "Experience": {
-    "experience": "My Experience"
+    "experience": "Досвід"
   }
 }
