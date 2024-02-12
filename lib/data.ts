@@ -36,6 +36,7 @@ export const links = [
 
 export const experiencesData = [
   {
+    id: 1,
     title: 'Junior Front-End Developer in TRUSTEE GLOBAL',
     location: 'Vinnytsia, Ukraine 🇺🇦',
     description:
@@ -44,6 +45,7 @@ export const experiencesData = [
     date: '2023',
   },
   {
+    id: 2,
     title: 'Sales manager in BRIGHTERLY',
     location: 'Las Vegas, USA 🇺🇸',
     description: 'Ensure effective communication between team members and clients.',
@@ -51,6 +53,7 @@ export const experiencesData = [
     date: '2022 - 2023',
   },
   {
+    id: 3,
     title: 'Sales manager in ENGLISHDOM',
     location: 'Dnipro, Ukraine 🇺🇦',
     description:

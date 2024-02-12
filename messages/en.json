@@ -41,6 +41,15 @@
     "skills": "my skills"
   },
   "Experience": {
-    "experience": "Досвід"
+    "experience": "my experience",
+    "title1": "Junior Front-End Developer in TRUSTEE GLOBAL",
+    "title2": "Sales manager in BRIGHTERLY",
+    "title3": "Sales manager in ENGLISHDOM",
+    "location1": "Vinnytsia, Ukraine 🇺🇦",
+    "location2": "Las Vegas, USA 🇺🇸",
+    "location3": "Dnipro, Ukraine 🇺🇦",
+    "description1": "Creating a sleek and dynamic web version for main product! Collaborating on both enhancing the current project and crafting exciting new components. Also turbocharging the existing project with optimization and refactoring magic. Tools of the trade: JS, React, React Native, Apollo GraphQl, GitLab.",
+    "description2": "Ensure effective communication between team members and clients.",
+    "description3": "Track record in client relationship management, opportunity identification and effective communication to drive business growth."
   }
 }

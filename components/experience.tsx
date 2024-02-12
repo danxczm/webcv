@@ -9,17 +9,18 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import useSectionInView from '@/lib/hooks';
 import { useTheme } from '@/context/theme-context';
+import { useTranslations } from 'next-intl';
 
 export default function Experience() {
   const { ref } = useSectionInView('experience', 0.5);
-
+  const t = useTranslations('Experience');
   const { theme } = useTheme();
 
   return (
     <section ref={ref} id="experience" className="mb-28 scroll-mt-28">
-      <SectionHeading>My experience</SectionHeading>
+      <SectionHeading>{t('experience')}</SectionHeading>
       <VerticalTimeline lineColor="">
-        {experiencesData.map(({ title, location, description, icon, date }, index) => (
+        {experiencesData.map(({ title, location, description, icon, date, id }, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               visible={true}
@@ -43,9 +44,11 @@ export default function Experience() {
                 fontSize: '1.5rem',
               }}
             >
-              <h3 className="font-semibold capitalize">{title}</h3>
-              <p className="!mt-0 font-normal">{location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">{description}</p>
+              <h3 className="font-semibold">{t(`title${id}`)}</h3>
+              <p className="!mt-0 font-normal">{t(`location${id}`)}</p>
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+                {t(`description${id}`)}
+              </p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
