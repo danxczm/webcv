@@ -1,21 +1,5 @@
-import Intro from '@/components/intro';
-import SectionDivider from '@/components/section-divider';
-import About from '@/components/about';
-import Project from '@/components/projects';
-import Skills from '@/components/skills';
-import Experience from '@/components/experience';
-import Contact from '@/components/contact';
+import { redirect } from 'next/navigation';
 
-export default function Home() {
-  return (
-    <main className="flex flex-col items-center px-4">
-      <Intro />
-      <SectionDivider />
-      <About />
-      <Project />
-      <Skills />
-      <Experience />
-      <Contact />
-    </main>
-  );
+export default function RootPage() {
+  redirect('/en');
 }
