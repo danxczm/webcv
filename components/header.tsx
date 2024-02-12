@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 
+import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import clsx from 'clsx';
 
@@ -12,6 +13,8 @@ import LanguageSelector from './language-selector';
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+  const t = useTranslations('Header');
 
   return (
     <header className="relative z-50">
@@ -36,11 +39,11 @@ export default function Header() {
                   setTimeOfLastClick(Date.now());
                 }}
                 className={clsx(
-                  'flex w-full items-center justify-center p-3 transition hover:text-gray-950 dark:text-gray-500 dark:hover:text-gray-300',
+                  'flex w-full items-center justify-center p-3 capitalize transition hover:text-gray-950 dark:text-gray-500 dark:hover:text-gray-300',
                   { 'text-gray-950 dark:text-gray-200': activeSection === link.name }
                 )}
               >
-                {link.name}
+                {t(`${link.name}`)}
               </Link>
               {link.name === activeSection && (
                 <motion.span

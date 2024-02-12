@@ -12,7 +12,7 @@ import SubmitButton from './submit-button';
 import toast from 'react-hot-toast';
 
 export default function Contact() {
-  const { ref } = useSectionInView('Contact');
+  const { ref } = useSectionInView('contact');
 
   const formRef = useRef<HTMLFormElement>(null);
 

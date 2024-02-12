@@ -9,27 +9,27 @@ import todo from '@/public/todo.png';
 
 export const links = [
   {
-    name: 'Home',
+    name: 'home',
     hash: '#home',
   },
   {
-    name: 'About',
+    name: 'about',
     hash: '#about',
   },
   {
-    name: 'Projects',
+    name: 'projects',
     hash: '#projects',
   },
   {
-    name: 'Skills',
+    name: 'skills',
     hash: '#skills',
   },
   {
-    name: 'Experience',
+    name: 'experience',
     hash: '#experience',
   },
   {
-    name: 'Contact',
+    name: 'contact',
     hash: '#contact',
   },
 ] as const;

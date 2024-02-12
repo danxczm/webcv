@@ -10,6 +10,7 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import ThemeSwitch from '@/components/theme-switch';
 import ThemeContextProvider from '@/context/theme-context';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -27,7 +28,8 @@ type RootLayoutProps = {
   };
 };
 
-export default function RootLayout({ children, params: { locale } }: RootLayoutProps) {
+export default function RootLayout({ children, params: { locale } }: Readonly<RootLayoutProps>) {
+  const messages = useMessages();
   return (
     <html lang={locale} className="!scroll-smooth">
       <body
@@ -37,16 +39,17 @@ export default function RootLayout({ children, params: { locale } }: RootLayoutP
           <div className="animation-delay-2000 absolute right-10 h-52 w-52 animate-blob rounded-full bg-blue-300 opacity-50 mix-blend-multiply blur-xl filter sm:right-44  sm:h-96 sm:w-96"></div>
           <div className="animation-delay-4000 absolute left-10 h-52 w-52 animate-blob rounded-full bg-yellow-300 opacity-50 mix-blend-multiply blur-xl filter sm:left-44 sm:h-96 sm:w-96"></div>
         </div>
-        <ThemeContextProvider>
-          <Toaster position="top-right" />
-
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
-          </ActiveSectionContextProvider>
-          <ThemeSwitch />
-        </ThemeContextProvider>
+        <NextIntlClientProvider messages={messages}>
+          <ThemeContextProvider>
+            <Toaster position="top-right" />
+            <ActiveSectionContextProvider>
+              <Header />
+              {children}
+              <Footer />
+            </ActiveSectionContextProvider>
+            <ThemeSwitch />
+          </ThemeContextProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

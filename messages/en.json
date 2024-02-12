@@ -1,4 +1,22 @@
 {
+  "Header": {
+    "home": "home",
+    "about": "about",
+    "projects": "projects",
+    "skills": "skills",
+    "experience": "experience",
+    "contact": "contact"
+  },
+  "Intro": {
+    "name": "Hello, I'm Dan!",
+    "skill": "Front-end developer",
+    "separate": "from",
+    "location": "Ukraine, Kyiv. 🇺🇦",
+    "enjoy": "I enjoy building apps and sites.",
+    "focus": "My focus is ",
+    "contact": "Contact me here",
+    "cv": "Download CV "
+  },
   "About": {
     "text-section-type": "text"
   },

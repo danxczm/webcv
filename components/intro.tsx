@@ -5,17 +5,19 @@ import Link from 'next/link';
 
 import { motion } from 'framer-motion';
 
-import useSectionInView from '@/lib/hooks';
-
 import { useActiveSectionContext } from '@/context/active-section-context';
 
+import useSectionInView from '@/lib/hooks';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
+import { useTranslations } from 'next-intl';
 
 export default function Intro() {
-  const { ref } = useSectionInView('Home', 0.5);
+  const { ref } = useSectionInView('home', 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+  const t = useTranslations('Intro');
 
   return (
     <section
@@ -56,13 +58,16 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: 'spring', duration: 2 }}
       >
-        <span className="block italic">Hello, I'm Dan!</span>
-        <span className="font-bold">Front-end developer</span> from{' '}
-        <span className="font-bold italic">Ukraine, Kyiv. 🇺🇦</span>
-        <span className="block italic">I enjoy building apps and sites.</span>
-        <span>
-          My focus is <span className="font-bold italic underline">React/Next.js</span> 👨‍🚀
-        </span>
+        <span className="block italic">{t('name')}</span>
+        <span className="font-bold">{t('skill')}</span>
+        <span>{t('separate')}</span>
+        <span className="font-bold italic">{t('location')}</span>
+        <span className="block">{t('enjoy')} 💻</span>
+        <span className="italic">
+          {t('focus')}
+          <span className="font-bold italic underline">React/Next.js</span>
+        </span>{' '}
+        👨‍🚀
       </motion.h1>
 
       <motion.div
@@ -75,11 +80,11 @@ export default function Intro() {
           href="#contact"
           className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
         >
-          Contact me here{' '}
+          {t('contact')}
           <BsArrowRight
             className="opacity-70 transition group-hover:translate-x-1"
             onClick={() => {
-              setActiveSection('Contact');
+              setActiveSection('contact');
               setTimeOfLastClick(Date.now());
             }}
           />
@@ -90,7 +95,8 @@ export default function Intro() {
           href="/CV.pdf"
           download
         >
-          Download CV <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
+          {t('cv')}
+          <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
 
         <div className="flex flex-wrap items-center justify-center gap-2">
