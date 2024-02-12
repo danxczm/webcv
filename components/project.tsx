@@ -65,7 +65,7 @@ export default function Project({
               href={link}
               target="_blank"
             >
-              link
+              {t('link')}
             </a>
           </div>
         </div>
