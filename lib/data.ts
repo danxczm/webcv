@@ -87,7 +87,7 @@ export const projectsData = [
     id: 3,
     title: 'Just a simple Todo App',
     description: 'This is the beginning of my TS journey which I recently started.',
-    tags: ['React', 'TypeScript', 'Tailwind'],
+    tags: ['React', 'TypeScript', 'Tailwind', 'Zustand'],
     imageUrl: todo,
     github: 'https://github.com/danxczm/learningTS',
     link: 'https://danxczm.github.io/learningTS/',
