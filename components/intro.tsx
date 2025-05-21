@@ -92,7 +92,7 @@ export default function Intro() {
 
         <a
           className="borderBlack10 group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
-          href={'Front-end developer Borodavko Bohdan.pdf'}
+          href={'Front_End_Developer_Borodavko_Bohdan.pdf'}
           download
         >
           {t('cv')}

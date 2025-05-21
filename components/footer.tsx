@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl';
-import React from 'react';
 
 export default function Footer() {
   const t = useTranslations('Footer');

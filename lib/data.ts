@@ -37,7 +37,16 @@ export const links = [
 export const experiencesData = [
   {
     id: 1,
-    title: 'Junior Front-End Developer in TRUSTEE GLOBAL',
+    title: 'Front-End Developer - NDA',
+    location: 'Vinnytsia, Ukraine 🇺🇦',
+    description:
+      'Creating a sleek and dynamic web version for main product! Collaborating on both enhancing the current project and crafting exciting new components. Also turbocharging the existing project with optimization and refactoring magic. Tools of the trade: JS, React, React Native, Apollo GraphQl, GitLab.',
+    icon: React.createElement(FaReact),
+    date: '2024',
+  },
+  {
+    id: 2,
+    title: 'Front-End Developer in TRUSTEE GLOBAL',
     location: 'Vinnytsia, Ukraine 🇺🇦',
     description:
       'Creating a sleek and dynamic web version for main product! Collaborating on both enhancing the current project and crafting exciting new components. Also turbocharging the existing project with optimization and refactoring magic. Tools of the trade: JS, React, React Native, Apollo GraphQl, GitLab.',
@@ -45,21 +54,12 @@ export const experiencesData = [
     date: '2023',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Sales manager in BRIGHTERLY',
     location: 'Las Vegas, USA 🇺🇸',
     description: 'Ensure effective communication between team members and clients.',
     icon: React.createElement(MdWorkOutline),
     date: '2022 - 2023',
-  },
-  {
-    id: 3,
-    title: 'Sales manager in ENGLISHDOM',
-    location: 'Dnipro, Ukraine 🇺🇦',
-    description:
-      'I`ve excel in fostering client relationships, identifying opportunities, and ensuring effective communication to drive business growth',
-    icon: React.createElement(MdWorkOutline),
-    date: '2020-2022',
   },
 ] as const;
 
