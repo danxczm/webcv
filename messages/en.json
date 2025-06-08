@@ -44,14 +44,14 @@
   "Experience": {
     "experience": "my experience",
     "title1": "Front-End Developer - NDA",
-    "title2": "Junior Front-End Developer in TRUSTEE GLOBAL",
-    "title3": "Sales manager in BRIGHTERLY",
+    "title2": "Front-End Developer - Talent Bay",
+    "title3": "Front-End Developer in TRUSTEE GLOBAL",
     "location1": "Kyiv, Ukraine 🇺🇦",
-    "location2": "Vinnytsia, Ukraine 🇺🇦",
-    "location3": "Las Vegas, USA 🇺🇸",
+    "location2": "Kyiv, Ukraine 🇺🇦",
+    "location3": "Vinnytsia, Ukraine 🇺🇦",
     "description1": "Bringing designs to life in code, taming legacy systems, and building fast, flexible components in collaboration with backend and marketing teams. Working with JS, Next.js, React, SCSS modules, and GitLab.",
-    "description2": "Creating a sleek and dynamic web version for main product! Collaborating on both enhancing the current project and crafting exciting new components. Also turbocharging the existing project with optimization and refactoring magic. Tools of the trade: JS, React, React Native, Apollo GraphQl, GitLab.",
-    "description3": "Ensure effective communication between team members and clients."
+    "description2": "Built a scalable, SEO-friendly CRM with reusable components using Styled Components and Ant Design. Focused on performance, responsive design, and clean, maintainable code with TypeScript and Next.js. Tools of the trade: NextJS, TypeScript, AntDesign, Zustand, StyledComponents.",
+    "description3": "Creating a sleek and dynamic web version for main product! Collaborating on both enhancing the current project and crafting exciting new components. Also turbocharging the existing project with optimization and refactoring magic. Tools of the trade: JS, React, React Native, Apollo GraphQl, GitLab."
   },
   "Contact": {
     "contact": "contact me",

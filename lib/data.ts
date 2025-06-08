@@ -38,29 +38,30 @@ export const experiencesData = [
   {
     id: 1,
     title: 'Front-End Developer - NDA',
-    location: 'Vinnytsia, Ukraine 🇺🇦',
+    location: 'Kyiv, Ukraine 🇺🇦',
     description:
-      'Creating a sleek and dynamic web version for main product! Collaborating on both enhancing the current project and crafting exciting new components. Also turbocharging the existing project with optimization and refactoring magic. Tools of the trade: JS, React, React Native, Apollo GraphQl, GitLab.',
+      'Implemented new features, fixed critical bugs, maintained and improved existing functionality, proposed technical enhancements, integrated third-party services, and refactored code for performance and readability.',
     icon: React.createElement(FaReact),
-    date: '2024',
+    date: '2024 - now',
   },
   {
     id: 2,
+    title: 'Front-End Developer in Talent Bay',
+    location: 'Kyiv, Ukraine 🇺🇦',
+    description:
+      'Built a scalable, SEO-friendly CRM with reusable components using Styled Components and Ant Design. Focused on performance, responsive design, and clean, maintainable code with TypeScript and Next.js. Tools of the trade: NextJS, TypeScript, AntDesign, Zustand, StyledComponents.',
+    icon: React.createElement(FaReact),
+    date: '2023-2024',
+  },
+  {
+    id: 3,
     title: 'Front-End Developer in TRUSTEE GLOBAL',
     location: 'Vinnytsia, Ukraine 🇺🇦',
     description:
       'Creating a sleek and dynamic web version for main product! Collaborating on both enhancing the current project and crafting exciting new components. Also turbocharging the existing project with optimization and refactoring magic. Tools of the trade: JS, React, React Native, Apollo GraphQl, GitLab.',
     icon: React.createElement(FaReact),
     date: '2023',
-  },
-  {
-    id: 3,
-    title: 'Sales manager in BRIGHTERLY',
-    location: 'Las Vegas, USA 🇺🇸',
-    description: 'Ensure effective communication between team members and clients.',
-    icon: React.createElement(MdWorkOutline),
-    date: '2022 - 2023',
-  },
+  }
 ] as const;
 
 export const projectsData = [
